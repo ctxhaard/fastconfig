@@ -16,3 +16,8 @@ echo source ~/.texarc >> ~/.bash_profile
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall
 
+cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
+./install.py --clang-completer
+cd -
+
