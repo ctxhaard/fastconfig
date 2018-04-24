@@ -1,0 +1,28 @@
+#Host *
+#  GSSAPIAuthentication no
+
+Host texa-svn.dmz.texa.org
+	GSSAPIAuthentication no
+	User ctomasin
+	IdentityFile /home/ctomasin-local/Documents/SVN/ctomasin_ssh.ppk
+
+Host gitlabtexa
+	User git
+	HostName git-srv01.italia.texa.org
+	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_id_rsa
+
+Host gittexa
+	User git
+	HostName git-srv01.italia.texa.org
+	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_new_rsa
+
+Host git-srv01.italia.texa.org
+	User git
+	HostName git-srv01.italia.texa.org
+	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_new_rsa
+
+Host axone0-srv01.italia.texa.org
+	User jenkins
+	HostName axone0-srv01.italia.texa.org
+	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_new_rsa
+

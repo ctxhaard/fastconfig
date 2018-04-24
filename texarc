@@ -1,0 +1,12 @@
+export auto_proxy="http://proxy.italia.texa.org:8080/wpad.dat"
+export http_proxy="http://proxy.italia.texa.org:8080"
+export https_proxy="$http_proxy"
+export no_proxy="localhost,172.0.0.1,lx-ctomasin,*.italia.texa.org,*.dmz.texa.org"
+export HTTP_PROXY="$http_proxy"
+export HTTPS_PROXY="$http_proxy"
+export NO_PROXY="$no_proxy"
+
+export GIT_EDITOR=vim
+
+export PATH=~/bin:/opt/ADT/sdk/platform-tools:$PATH
+
