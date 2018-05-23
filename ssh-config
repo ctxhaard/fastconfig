@@ -26,3 +26,8 @@ Host axone0-srv01.italia.texa.org
 	HostName axone0-srv01.italia.texa.org
 	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_new_rsa
 
+
+Host 192.168.2.2
+  IdentityFile /home/ctomasin-local/.ssh/id_rsa.legatoTarget
+  User root
+  Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,aes192-cbc,aes256-cbc,blowfish-cbc
