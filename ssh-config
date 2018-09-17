@@ -1,6 +1,10 @@
 #Host *
 #  GSSAPIAuthentication no
 
+#LogLevel DEBUG1
+
+IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_new_rsa
+
 Host texa-svn.dmz.texa.org
 	GSSAPIAuthentication no
 	User ctomasin
