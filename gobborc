@@ -1,0 +1,9 @@
+echo "-----------------------------"
+echo "setting proxy mgobbo"
+echo "-----------------------------"
+unset auto_proxy
+export http_proxy="10.100.66.87:1234"
+export https_proxy="$http_proxy"
+export HTTP_PROXY="$http_proxy"
+export HTTPS_PROXY="$http_proxy"
+export NO_PROXY="$no_proxy"
