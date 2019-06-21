@@ -1,7 +1,7 @@
-export auto_proxy="http://proxy.italia.texa.org:8080/wpad.dat"
-export http_proxy="http://proxy.italia.texa.org:8080"
+export auto_proxy="proxy.italia.texa.org:8080/wpad.dat"
+export http_proxy="proxy.italia.texa.org:8080"
 export https_proxy="$http_proxy"
-export no_proxy="localhost,172.0.0.1,lx-ctomasin,*.italia.texa.org,*.dmz.texa.org"
+export no_proxy="localhost,127.0.0.1,lx-ctomasin,*.texa.org,192.168.2.0/16"
 export HTTP_PROXY="$http_proxy"
 export HTTPS_PROXY="$http_proxy"
 export NO_PROXY="$no_proxy"
@@ -10,3 +10,5 @@ export GIT_EDITOR=vim
 
 export PATH=~/bin:/opt/ADT/sdk/platform-tools:$PATH
 
+alias tgwf='ssh -i ~/Desktop/fpt_key root@192.168.2.1'
+source /home/ctomasin-local/.local/bin/activate.sh

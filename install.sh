@@ -12,6 +12,9 @@ ln -s $DIR/ssh-config ~/.ssh/config
 rm ~/.texarc
 ln -s $DIR/texarc ~/.texarc
 
+rm ~/.zshrc
+ln -s $DIR/zshrc ~/.zshrc
+
 rm ~/.vimrc
 ln -s $DIR/vimrc ~/.vimrc
 
