@@ -49,5 +49,5 @@ Host 192.168.2.2
 Host tgwf
   IdentityFile  /home/ctomasin-local/.ssh/fpt_key
   User root
-  HostName 192.168.2.1
+  HostName 192.168.10.2
 
