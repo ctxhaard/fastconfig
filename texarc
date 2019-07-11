@@ -10,5 +10,5 @@ export GIT_EDITOR=vim
 
 export PATH=~/bin:/opt/ADT/sdk/platform-tools:$PATH
 
-alias tgwf='ssh -i ~/Desktop/fpt_key root@192.168.2.1'
+alias tgwf='ssh tgwf'
 source /home/ctomasin-local/.local/bin/activate.sh

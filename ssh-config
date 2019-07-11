@@ -47,7 +47,7 @@ Host 192.168.2.2
   Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,aes192-cbc,aes256-cbc,blowfish-cbc
 
 Host tgwf
-  IdentityFile ~/Desktop/fpt_key
+  IdentityFile  /home/ctomasin-local/.ssh/fpt_key
   User root
   HostName 192.168.2.1
 
