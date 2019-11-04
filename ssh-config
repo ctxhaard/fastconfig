@@ -3,51 +3,51 @@
 
 #LogLevel DEBUG1
 
-IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_new_rsa
+IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/git_ctomasin_new_rsa
 
 # Old SVN server
 Host texa-svn.dmz.texa.org
 	GSSAPIAuthentication no
 	User ctomasin
-	IdentityFile /home/ctomasin-local/Documents/SVN/ctomasin_ssh.ppk
+	IdentityFile /home/italia.texa.org/ctomasin/Documents/SVN/ctomasin_ssh.ppk
 
 # Current SVN server for firmware
 Host svnad.italia.texa.org
         GSSAPIAuthentication no
         User ctomasin
-        IdentityFile /home/ctomasin-local/Documents/SVN/ctomasin_ssh.ppk
+        IdentityFile /home/italia.texa.org/ctomasin/Documents/SVN/ctomasin_ssh.ppk
 
 Host gitlabtexa
 	User git
 	HostName git-srv01.italia.texa.org
-	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_id_rsa
+	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/git_ctomasin_id_rsa
 
 Host gittexa
 	User git
 	HostName git-srv01.italia.texa.org
-	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_new_rsa
+	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/git_ctomasin_new_rsa
 
 Host git-srv01.italia.texa.org
 	User git
 # to use with gitlab projects
-	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_id_rsa
+	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/git_ctomasin_id_rsa
 	HostName git-srv01.italia.texa.org
 # to use with non-gitlab projects
-#	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_new_rsa
+#	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/git_ctomasin_new_rsa
 
 Host axone0-srv01.italia.texa.org
 	User jenkins
 	HostName axone0-srv01.italia.texa.org
-	IdentityFile /home/ctomasin-local/Documents/Git/git_ctomasin_new_rsa
+	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/git_ctomasin_new_rsa
 
 
-Host 192.168.2.2
-  IdentityFile /home/ctomasin-local/.ssh/id_rsa.legatoTarget
-  User root
-  Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,aes192-cbc,aes256-cbc,blowfish-cbc
+#Host 192.168.2.2
+#  IdentityFile /home/italia.texa.org/ctomasin/.ssh/id_rsa.legatoTarget
+#  User root
+#  Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,aes192-cbc,aes256-cbc,blowfish-cbc
 
 Host tgwf
-  IdentityFile  /home/ctomasin-local/.ssh/fpt_key
+  IdentityFile  /home/italia.texa.org/ctomasin/.ssh/fpt_key
   User root
   HostName 192.168.10.2
 
