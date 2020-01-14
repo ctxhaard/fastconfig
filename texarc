@@ -15,8 +15,8 @@ proxy_set ()
 	export http_proxy="127.0.0.1:1234"
 	export https_proxy="$http_proxy"
 	export no_proxy="localhost,127.0.0.1,lx-ctomasin,*.texa.org,192.168.10.0/16"
-	export HTTP_PROXY="$127.0.0.1:1234"
-	export HTTPS_PROXY="$127.0.0.1:1234"
+	export HTTP_PROXY="$http_proxy"
+	export HTTPS_PROXY="$http_proxy"
 	export NO_PROXY="$no_proxy"
 	if [ -n "$PS1_OLD" ]; then
 		export PS1=$PS1_OLD
