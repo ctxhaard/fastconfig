@@ -12,12 +12,11 @@ proxy_unset ()
 
 proxy_set ()
 {
-	export auto_proxy="proxy.italia.texa.org:8080/wpad.dat"
-	export http_proxy="proxy.italia.texa.org:8080"
+	export http_proxy="127.0.0.1:1234"
 	export https_proxy="$http_proxy"
 	export no_proxy="localhost,127.0.0.1,lx-ctomasin,*.texa.org,192.168.10.0/16"
-	export HTTP_PROXY="$http_proxy"
-	export HTTPS_PROXY="$http_proxy"
+	export HTTP_PROXY="$127.0.0.1:1234"
+	export HTTPS_PROXY="$127.0.0.1:1234"
 	export NO_PROXY="$no_proxy"
 	if [ -n "$PS1_OLD" ]; then
 		export PS1=$PS1_OLD
@@ -31,6 +30,7 @@ export GIT_EDITOR=vim
 export PATH=~/bin:/opt/ADT/sdk/platform-tools:$PATH
 
 alias tgwf='ssh -o StrictHostKeyChecking=no tgwf'
+alias tgww='ssh -o StrictHostKeyChecking=no tgww'
 alias scp='scp -o StrictHostKeyChecking=no'
 alias tmd='cd ~/development/tgwf/tmd4etruck'
 alias tgw='cd ~/development/tgwf'

@@ -51,3 +51,9 @@ Host tgwf
   User root
   HostName 192.168.10.2
 
+Host tgww
+  IdentityFile /home/italia.texa.org/ctomasin/.ssh/twaice_key
+  user root
+  HostName 192.168.10.2
+
+
