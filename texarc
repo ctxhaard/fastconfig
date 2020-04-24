@@ -23,15 +23,26 @@ proxy_set ()
 	fi
 }
 
-proxy_set
+apple_init () 
+{
+    sudo rmmod hid-magicmouse
+    sudo modprobe hid-magicmouse
+    xinput --set-prop "Magic Mouse 2" 314 -1.0
+    setxkbmap -option apple:badmap
+}
+
+# 16.03.2020: temporarily deactivated
+#proxy_set
 
 export GIT_EDITOR=vim
 
-export PATH=~/bin:/opt/ADT/sdk/platform-tools:$PATH
+export PATH=/opt/ADT/sdk/platform-tools:$PATH
 
+alias ssh='ssh -o StrictHostKeyChecking=no'
 alias tgwf='ssh -o StrictHostKeyChecking=no tgwf'
 alias tgww='ssh -o StrictHostKeyChecking=no tgww'
 alias scp='scp -o StrictHostKeyChecking=no'
 alias tmd='cd ~/development/tgwf/tmd4etruck'
 alias tgw='cd ~/development/tgwf'
+alias vpn='/opt/vpntexa/connect.sh'
 #source /home/ctomasin-local/.local/bin/activate.sh
