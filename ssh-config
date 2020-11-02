@@ -25,7 +25,7 @@ Host gitlabtexa
 Host gittexa
 	User git
 	HostName git-srv01.italia.texa.org
-	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/git_ctomasin_new_rsa
+	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/ctomasin_git_rsa
 
 Host git-srv01.italia.texa.org
 	User git
@@ -33,7 +33,7 @@ Host git-srv01.italia.texa.org
 	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/git_ctomasin_id_rsa
 	HostName git-srv01.italia.texa.org
 # to use with non-gitlab projects
-#	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/git_ctomasin_new_rsa
+#	IdentityFile /home/italia.texa.org/ctomasin/Documents/Git/ctomasin_git_rsa
 
 Host axone0-srv01.italia.texa.org
 	User jenkins
@@ -50,6 +50,12 @@ Host tgwf
   IdentityFile  /home/italia.texa.org/ctomasin/.ssh/fpt_key
   User root
   HostName 192.168.10.2
+
+Host tgwf2
+  IdentityFile  /home/italia.texa.org/ctomasin/.ssh/fpt_key
+  User root
+  HostName 192.168.10.2
+  Port 2020
 
 Host tgww
   IdentityFile /home/italia.texa.org/ctomasin/.ssh/twaice_key

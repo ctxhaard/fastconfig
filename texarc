@@ -25,14 +25,19 @@ proxy_set ()
 
 apple_init () 
 {
-    sudo rmmod hid-magicmouse
-    sudo modprobe hid-magicmouse
-    xinput --set-prop "Magic Mouse 2" 314 -1.0
+    lsmod | grep hid-magicmouse
+    if [ "0" = "$?" ]; then
+    	sudo rmmod hid-magicmouse
+    	sudo modprobe hid-magicmouse
+    	xinput --set-prop "Magic Mouse 2" 314 -1.0
+    fi
     setxkbmap -option apple:badmap
 }
 
-# 16.03.2020: temporarily deactivated
+# uncomment when PC is connected to TEXA facility network
 #proxy_set
+# uncomment when using apple macig keyboard and/or mouse
+apple_init
 
 export GIT_EDITOR=vim
 
@@ -40,9 +45,14 @@ export PATH=/opt/ADT/sdk/platform-tools:$PATH
 
 alias ssh='ssh -o StrictHostKeyChecking=no'
 alias tgwf='ssh -o StrictHostKeyChecking=no tgwf'
+alias tgwf2='ssh -o StrictHostKeyChecking=no tgwf2'
 alias tgww='ssh -o StrictHostKeyChecking=no tgww'
 alias scp='scp -o StrictHostKeyChecking=no'
 alias tmd='cd ~/development/tgwf/tmd4etruck'
 alias tgw='cd ~/development/tgwf'
 alias vpn='/opt/vpntexa/connect.sh'
+alias engicam='ssh user@10.100.76.21'
+alias px30mount='sshfs user@10.100.76.21:/home/user/px30 ~/development/px30'
+alias px30unmount='sudo umount ~/development/px30'
+
 #source /home/ctomasin-local/.local/bin/activate.sh
